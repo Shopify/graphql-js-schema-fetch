@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/Shopify/graphql-js-schema-fetch.png?circle-token=b91d60ffd2266c360cfc56697c847af8e95f715b)](https://circleci.com/gh/Shopify/graphql-js-schema-fetch)
+
 # graphql-js-schema-fetch
 
 It fetches the JSON representation of the GraphQL schema from a live server
@@ -7,62 +9,49 @@ It fetches the JSON representation of the GraphQL schema from a live server
 - [Installation](#installation)
 - [Examples](#examples)
 - [API](#api)
-    + [`const instance = graphqlJsSchemaFetch([options])`](#const-instance-graphqljsschemafetch-options)
-    + [`someFunction(variable, callback)`](#somefunction-variable-callback)
-    + [`anotherFunction()`](#anotherfunction)
 - [License](http://github.com/Shopify/graphql-js-schema-fetch/blob/master/LICENSE.md)
 
 ## Installation
+
 ```bash
-$ npm install graphql-js-schema-fetch
+git clone git@github.com:Shopify/graphql-js-schema-fetch.git
+cd graphql-js-schema-fetch
+npm install
+npm link
 ```
 
 ## Examples
 
-#### Example 1
+To fetch the json representation of the graphql schema from a live server that
+implements the GraphQL (and optionally the Relay) spec, run:
 
-Decribe Example 1. Stumptown selfies put a bird on it occupy, scenester ramps jean shorts next level kale chips seitan:
-
-```javascript
-import graphqlJsSchemaFetch from 'graphql-js-schema-fetch';
-
-/********************************/
-/********************************/
-/* -- PUT AN EXAMPLE IN HERE -- */
-/********************************/
-/********************************/
+```bash
+graphql-js-schema-fetch --url https://www.my-server.com/api
 ```
 
-#### Example 2
+If your server requires additional credentials or headers, use the `--header`
+option:
 
-Decribe Example 1. Stumptown selfies put a bird on it occupy, scenester ramps jean shorts next level kale chips seitan:
+```bash
+graphql-js-schema-fetch --url https://www.my-server.com/api --header "Authorization: Basic abc123" --header "X-API-Version: 1.1"
+```
 
-```javascript
-import graphqlJsSchemaFetch from 'graphql-js-schema-fetch';
+If your server uses something other than the `POST` method for its API, use the
+`--method` option:
 
-/********************************/
-/********************************/
-/* -- PUT AN EXAMPLE IN HERE -- */
-/********************************/
-/********************************/
+```bash
+graphql-js-schema-fetch --url https://www.my-server.com/api --method GET
 ```
 
 ## API
 
-#### `const instance = graphqlJsSchemaFetch([options]);`
+#### `const instance = graphqlJsSchemaFetch(url, method, [headers]);`
 
-Options you can pass `graphqlJsSchemaFetch`:
-- `option1` - Replace with a description of option 1
-- `option2` - Replace with a description of option 2
-- `option3` - Replace with a description of option 2
-
-#### `instance.someFunction(variable, callback);`
-
-Replace with `someFunction` description. Hoodie post-ironic polaroid salvia, microdosing vice ethical etsy bushwick roof party swag. Farm-to-table humblebrag etsy neutra synth.
-
-#### `instance.anotherFunction();`
-
-Replace with `anotherFunction` description. Tacos polaroid cronut trust fund mumblecore biodiesel viral hella helvetica actually organic. Stumptown selfies put a bird on it occupy, scenester ramps jean shorts next level kale chips seitan.
+Params you can pass `graphqlJsSchemaFetch`:
+- `url` - The url where your GraphQL API resides
+- `method` - The HTTP method to use while making the request
+- `headers` - A hash representing the key value pairs of headers to pass to
+  `node-fetch`
 
 ## License
 

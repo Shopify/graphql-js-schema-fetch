@@ -1,0 +1,43 @@
+{
+  "name": "graphql-js-schema-fetch",
+  "version": "1.0.0",
+  "description": "A simple command line tool for fetching the JSON representation of the GraphQL schema from a live server",
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
+  "license": "MIT",
+  "author": "Shopify Inc.",
+  "dependencies": {
+    "graphql": "0.7.0",
+    "minimist": "1.2.0",
+    "node-fetch": "1.6.3"
+  },
+  "devDependencies": {
+    "babel": "6.5.2",
+    "babel-cli": "6.11.4",
+    "babel-core": "6.13.2",
+    "babel-plugin-add-shopify-header": "1.0.5",
+    "babel-preset-shopify": "13.0.0",
+    "babel-register": "6.11.6",
+    "eslint": "3.3.1",
+    "eslint-plugin-mocha": "4.5.1",
+    "eslint-plugin-shopify": "14.0.0",
+    "mocha": "3.0.2"
+  },
+  "scripts": {
+    "test": "npm run lint-allow-warning && mocha --compilers js:babel-register -u tdd test/index.js",
+    "prepublish": "babel -d lib/ src/",
+    "lint": "eslint --max-warnings 0 -c .eslintrc.json src/ test/",
+    "lint-allow-warning": "eslint -c .eslintrc.json src/ test/"
+  },
+  "keywords": [
+    "graphql,schema"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Shopify/graphql-js-schema-fetch.git"
+  },
+  "homepage": "https://github.com/Shopify/graphql-js-schema-fetch",
+  "bugs": {
+    "url": "https://github.com/Shopify/graphql-js-schema-fetch/issues"
+  }
+}
