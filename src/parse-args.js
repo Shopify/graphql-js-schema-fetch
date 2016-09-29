@@ -1,14 +1,14 @@
 import minimist from 'minimist';
 
 export default function parseArgs(rawArgs) {
-  const args = minimist(rawArgs);
+  const args = minimist(rawArgs, {default: {method: 'POST'}});
 
   if (args.help || !args.url) {
     return {showHelp: true};
   }
 
   const url = args.url;
-  const method = args.method || 'POST';
+  const method = args.method;
   const headers = [].concat(args.header).reduce((headerAcc, header) => {
     const pair = header.split(':');
 
