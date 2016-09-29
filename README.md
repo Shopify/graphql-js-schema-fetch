@@ -43,16 +43,6 @@ If your server uses something other than the `POST` method for its API, use the
 graphql-js-schema-fetch --url https://www.my-server.com/api --method GET
 ```
 
-```javascript
-import graphqlJsSchemaFetch from 'graphql-js-schema-fetch';
-
-/********************************/
-/********************************/
-/* -- PUT AN EXAMPLE IN HERE -- */
-/********************************/
-/********************************/
-```
-
 ## API
 
 #### `const instance = graphqlJsSchemaFetch(url, method, [headers]);`
