@@ -14,10 +14,7 @@ It fetches the JSON representation of the GraphQL schema from a live server
 ## Installation
 
 ```bash
-git clone git@github.com:Shopify/graphql-js-schema-fetch.git
-cd graphql-js-schema-fetch
-npm install
-npm link
+$ npm install @shopify/graphql-js-schema
 ```
 
 ## Examples
