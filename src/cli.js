@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 import parseArgs from './parse-args';
-import fetchSchema from './index';
 import help from './help';
+import fetchSchema from './index';
 
 const args = parseArgs(process.argv.slice(2));
 
 if (args.showHelp) {
   console.log(help);
+  // eslint-disable-next-line no-process-exit
   process.exit(0);
 }
 

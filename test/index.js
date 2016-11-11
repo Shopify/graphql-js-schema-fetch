@@ -39,4 +39,16 @@ suite('This will test arg parsing', () => {
 
     assert.equal(args.headers.Authorization, 'Basic abc123');
   });
+
+  test('it does not fail when no headers are passed', () => {
+    let didNotThrowError = true;
+
+    try {
+      parseArgs(['--url', 'www.com']);
+    } catch (error) {
+      didNotThrowError = false;
+    }
+
+    assert.ok(didNotThrowError, 'it didn\'t throw an error');
+  });
 });
