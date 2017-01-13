@@ -1,6 +1,6 @@
 {
   "name": "@shopify/graphql-js-schema-fetch",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple command line tool for fetching the JSON representation of the GraphQL schema from a live server",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
