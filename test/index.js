@@ -27,16 +27,16 @@ suite('This will test arg parsing', () => {
     assert.equal(args.headers['X-API-Key'], 'token123');
   });
 
-  test('it supplies sane default headers', () => {
-    const args = parseArgs(['--header', 'Authorization: Basic abc123', '--header', 'X-API-Key: token123', '--url', 'www.com']);
-
-    assert.deepEqual(args.headers.Accept, 'application/json');
-    assert.deepEqual(args.headers['Content-Type'], 'application/json');
-  });
-
   test('it cleans up arbitrary whitespace in headers', () => {
     const args = parseArgs(['--header', '    Authorization:     Basic abc123     ', '--url', 'www.com']);
 
     assert.equal(args.headers.Authorization, 'Basic abc123');
+  });
+
+  test('it handles default headers only', () => {
+    const args = parseArgs(['--url', 'www.com']);
+
+    assert.deepEqual(args.headers.Accept, 'application/json');
+    assert.deepEqual(args.headers['Content-Type'], 'application/json');
   });
 });
