@@ -39,4 +39,16 @@ suite('This will test arg parsing', () => {
     assert.deepEqual(args.headers.Accept, 'application/json');
     assert.deepEqual(args.headers['Content-Type'], 'application/json');
   });
+
+  test('it supports positional url argument', () => {
+    const args = parseArgs(['https://graphql.example.com']);
+
+    assert.deepEqual(args.url, 'https://graphql.example.com');
+  });
+
+  test('it supports named url argument', () => {
+    const args = parseArgs(['--url', 'https://graphql.example.com']);
+
+    assert.deepEqual(args.url, 'https://graphql.example.com');
+  });
 });

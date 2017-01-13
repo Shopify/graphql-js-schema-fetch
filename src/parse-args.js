@@ -13,11 +13,12 @@ export default function parseArgs(rawArgs) {
     }
   });
 
-  if (args.help || !args.url) {
+  const url = args._[0] || args.url;
+
+  if (args.help || !url) {
     return {showHelp: true};
   }
 
-  const url = args.url;
   const method = args.method;
 
   const headers = [].concat(args.header).reduce((headerAcc, header) => {
