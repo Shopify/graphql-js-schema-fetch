@@ -31,7 +31,7 @@ suite('This will test arg parsing', () => {
     const args = parseArgs(['--header', 'Authorization: Basic abc123', '--header', 'X-API-Key: token123', '--url', 'www.com']);
 
     assert.deepEqual(args.headers.Accept, 'application/json');
-    assert.deepEqual(args.headers['Content-Type'], 'application/x-www-form-urlencoded');
+    assert.deepEqual(args.headers['Content-Type'], 'application/json');
   });
 
   test('it cleans up arbitrary whitespace in headers', () => {

@@ -17,7 +17,7 @@ export default function parseArgs(rawArgs) {
     return headerAcc;
   }, {
     Accept: 'application/json',
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/json'
   });
 
   return {url, method, headers};
