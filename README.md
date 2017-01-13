@@ -23,21 +23,21 @@ To fetch the json representation of the graphql schema from a live server that
 implements the GraphQL (and optionally the Relay) spec, run:
 
 ```bash
-graphql-js-schema-fetch --url https://www.my-server.com/api
+graphql-js-schema-fetch https://www.my-server.com/api
 ```
 
 If your server requires additional credentials or headers, use the `--header`
 option:
 
 ```bash
-graphql-js-schema-fetch --url https://www.my-server.com/api --header "Authorization: Basic abc123" --header "X-API-Version: 1.1"
+graphql-js-schema-fetch https://www.my-server.com/api --header "Authorization: Basic abc123" --header "X-API-Version: 1.1"
 ```
 
 If your server uses something other than the `POST` method for its API, use the
 `--method` option:
 
 ```bash
-graphql-js-schema-fetch --url https://www.my-server.com/api --method GET
+graphql-js-schema-fetch https://www.my-server.com/api --method GET
 ```
 
 ## API
