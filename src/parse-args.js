@@ -9,8 +9,10 @@ export default function parseArgs(rawArgs) {
 
   const url = args.url;
   const method = args.method;
-  const headers = [].concat(args.header).reduce((headerAcc, header) => {
-    const pair = header.split(':');
+  const header = args.header || [];
+
+  const headers = [].concat(header).reduce((headerAcc, argHeader) => {
+    const pair = argHeader.split(':');
 
     headerAcc[pair[0].trim()] = pair[1].trim();
 
