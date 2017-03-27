@@ -4,4 +4,4 @@ deploy:
     - yarn install
     - yarn run test
     - yarn run prepublish
-    - yarn publish --new-version $(yarn run echo-version 2>&1 >/dev/null)
+    - npm publish
