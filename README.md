@@ -13,8 +13,16 @@ It fetches the JSON representation of the GraphQL schema from a live server
 
 ## Installation
 
+#### With Yarn:
+
 ```bash
-$ npm install @shopify/graphql-js-schema-fetch
+$ yarn global add graphql-js-schema-fetch
+```
+
+#### With NPM:
+
+```bash
+$ npm install -g graphql-js-schema-fetch
 ```
 
 ## Examples

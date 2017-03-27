@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import parseArgs from './parse-args';
-import fetchSchema from './index';
 import help from './help';
+import fetchSchema from './index';
 
 const args = parseArgs(process.argv.slice(2));
 
