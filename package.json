@@ -1,5 +1,5 @@
 {
-  "name": "@shopify/graphql-js-schema-fetch",
+  "name": "graphql-js-schema-fetch",
   "version": "1.1.0",
   "description": "A simple command line tool for fetching the JSON representation of the GraphQL schema from a live server",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
     "mocha": "3.0.2"
   },
   "scripts": {
-    "test": "npm run lint-allow-warning && mocha --compilers js:babel-register -u tdd test/index.js",
+    "test": "yarn run lint-allow-warning && mocha --compilers js:babel-register -u tdd test/index.js",
     "prepublish": "babel -d lib/ src/",
     "lint": "eslint --max-warnings 0 -c .eslintrc.json src/ test/",
     "lint-allow-warning": "eslint -c .eslintrc.json src/ test/"

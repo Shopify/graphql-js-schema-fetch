@@ -17,14 +17,14 @@ git clone git@github.com:your-username/graphql-js-schema-fetch.git
 
 Install the project's dependencies:
 ```
-npm install
+yarn install
 ```
 
 Write some features.
 
 Add some tests and make your change. Re-run the tests with:
 ```
-npm run test
+yarn run test
 ```
 
 ## Examples
