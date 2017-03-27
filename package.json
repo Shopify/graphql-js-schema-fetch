@@ -27,7 +27,8 @@
     "test": "yarn run lint-allow-warning && mocha --compilers js:babel-register -u tdd test/index.js",
     "prepublish": "babel -d lib/ src/",
     "lint": "eslint --max-warnings 0 -c .eslintrc.json src/ test/",
-    "lint-allow-warning": "eslint -c .eslintrc.json src/ test/"
+    "lint-allow-warning": "eslint -c .eslintrc.json src/ test/",
+    "echo-version": ">&2 node -e \"process.stdout.write(require('./package.json').version)\""
   },
   "keywords": [
     "graphql,schema"
