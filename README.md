@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/Shopify/graphql-js-schema-fetch.png?circle-token=b91d60ffd2266c360cfc56697c847af8e95f715b)](https://circleci.com/gh/Shopify/graphql-js-schema-fetch)
+[![Travis](https://travis-ci.com/Shopify/graphql-js-schema-fetch.svg?branch=master)](https://travis-ci.com/Shopify/graphql-js-schema-fetch)
 
 # graphql-js-schema-fetch
 
