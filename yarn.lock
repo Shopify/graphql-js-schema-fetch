@@ -1634,8 +1634,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-"git-rev-sync@github:mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf":
+git-rev-sync@mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf:
   version "1.7.1"
+  uid e576ceb4992b995e208b7ae0c859305dcb2a5ebf
   resolved "https://codeload.github.com/mikkoh/git-rev-sync/tar.gz/e576ceb4992b995e208b7ae0c859305dcb2a5ebf"
   dependencies:
     graceful-fs "4.1.6"
@@ -1769,8 +1770,8 @@ home-or-tmp@^1.0.0:
     user-home "^1.1.1"
 
 hosted-git-info@^2.1.4:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.4.1.tgz#4b0445e41c004a8bd1337773a4ff790ca40318c8"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 http-signature@~1.1.0:
   version "1.1.1"
