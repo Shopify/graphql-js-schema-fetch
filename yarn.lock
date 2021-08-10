@@ -1634,8 +1634,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-"git-rev-sync@github:mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf":
+git-rev-sync@mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf:
   version "1.7.1"
+  uid e576ceb4992b995e208b7ae0c859305dcb2a5ebf
   resolved "https://codeload.github.com/mikkoh/git-rev-sync/tar.gz/e576ceb4992b995e208b7ae0c859305dcb2a5ebf"
   dependencies:
     graceful-fs "4.1.6"
@@ -2438,8 +2439,8 @@ path-is-inside@^1.0.1:
   resolved "https://registry.yarnpkg.com/path-is-inside/-/path-is-inside-1.0.2.tgz#365417dede44430d1c11af61027facf074bdfc53"
 
 path-parse@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-type@^1.0.0:
   version "1.1.0"
