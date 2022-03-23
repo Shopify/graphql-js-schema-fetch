@@ -8,7 +8,7 @@
   "author": "Shopify Inc.",
   "dependencies": {
     "graphql": "0.7.0",
-    "minimist": "1.2.0",
+    "minimist": "1.2.6",
     "node-fetch": "1.6.3"
   },
   "devDependencies": {
