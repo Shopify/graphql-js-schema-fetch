@@ -1586,8 +1586,8 @@ fstream-ignore@^1.0.5:
     minimatch "^3.0.0"
 
 fstream@^1.0.0, fstream@^1.0.10, fstream@^1.0.2:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.11.tgz#5c1fb1f117477114f0632a0eb4b71b3cb0fd3171"
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.12.tgz#4e8ba8ee2d48be4f7d0de505455548eae5932045"
   dependencies:
     graceful-fs "^4.1.2"
     inherits "~2.0.0"
@@ -1634,8 +1634,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-"git-rev-sync@github:mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf":
+git-rev-sync@mikkoh/git-rev-sync#e576ceb4992b995e208b7ae0c859305dcb2a5ebf:
   version "1.7.1"
+  uid e576ceb4992b995e208b7ae0c859305dcb2a5ebf
   resolved "https://codeload.github.com/mikkoh/git-rev-sync/tar.gz/e576ceb4992b995e208b7ae0c859305dcb2a5ebf"
   dependencies:
     graceful-fs "4.1.6"
