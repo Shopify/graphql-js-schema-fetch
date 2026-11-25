@@ -1,4 +1,4 @@
-[![Travis](https://travis-ci.com/Shopify/graphql-js-schema-fetch.svg?branch=master)](https://travis-ci.com/Shopify/graphql-js-schema-fetch)
+### [Deprecated]: This repository is no longer maintained. It has been archived and receives no updates or security fixes.
 
 # graphql-js-schema-fetch
 
